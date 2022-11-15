@@ -1,0 +1,141 @@
+#container{
+    max-width: 700px;
+    margin: 0 auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+}
+
+#hamburger{
+    /*margin: 0 auto;*/
+}
+
+.title{
+    width: 600px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #dd0000;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.top-bun-1{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 75px;
+    background-color: #deb887;
+    border-radius: 75px 75px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-bun-2{
+    width: 500px;
+    height: 20px;
+    background-color: #D3A15F;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cheese{
+    width: 550px;
+    height: 15px;
+    background-color: #FFD700;
+    border-bottom: 5px solid #DAA520;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tomato{
+    width: 400px;
+    height: 45px;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 5px solid #DC143C;
+}
+
+.beef{
+    width: 450px;
+    height: 30px;
+    background-color: #CC6633;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 5px solid #993300;
+    border-radius: 30px;
+}
+
+.onion{
+    width: 420px;
+    height: 40px;
+    background-color: #800080;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.onion-circle{
+    width: 40px;
+    height: 40px;
+    background-color: #DDA0DD;
+    border-radius: 40px;
+    margin: 0 5px;
+}
+
+.meatballs{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.meatball{
+    width: 100px;
+    height: 100px;
+    background-color: #A52A2A;
+    border-radius: 100px;
+}
+
+.cucumber{
+    width: 420px;
+    height: 15px;
+    background-color: #90EE90;
+    border-bottom: 15px solid #008000;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 0 0 30px 30px;
+}
+
+.bottom-bun{
+    width: 500px;
+    height: 15px;
+    background-color: #D3A15F;
+    border-bottom: 35px solid #DEB887;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 15px 15px 35px 35px;
+}
+
+.plate{
+    width: 650px;
+    height: 15px;
+    background-color: #C0C0C0;
+    border-top: 10px solid #A2A2A2;
+    border-radius: 0 0 25px 25px;
+}
