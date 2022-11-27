@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang=pl>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 2 - Formularz</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main-flex-container">
+
+        <h1 class="title">Employment Form</h1>
+
+        <form action="#" method="post">
+
+            <section class="element-flex">
+                <label id="firstname">
+                    <header class="input-title">First name</header>
+                    <input type="text" placeholder="Jan" required>
+                </label>
+
+                <label id="lastname">
+                    <header class="input-title">Last name</header>
+                    <input type="text" placeholder="Kowalski" required>
+                </label>
+            </section>
+
+            <section class="element-flex">
+                <label id="email">
+                    <header  class="input-title">E-mail</header>
+                    <input type="email" placeholder="jk@gmail.com" pattern="[A-Za-z0-9]+@[A-Za-z0-9]+.[a-z]{2,3}" required>
+                </label>
+
+                <label id="phone">
+                    <header class="input-title">Phone</header>
+                    <input type="tel" placeholder="505 505 505" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+                </label>
+
+                <label id="birth">
+                    <header class="input-title">Date of Birth</header>
+                    <input type="date" max="2022-11-27" required>
+                </label>
+            </section>
+
+            <section class="element-flex">
+                <label id="gender">
+                    <header class="input-title">Gender</header>
+                    <select id="gender-select" required>
+                        <option value="" disabled selected></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </section>
+
+            <section>
+                <label id="jobs">
+                    <header class="input-title">What are you looking for?</header>
+
+                    <div class="element-flex media">
+                        <div>
+                            <input type="radio" id="soft-eng" name="jobs" value="Software Engineer" required>
+                            <label for="soft-eng">Software Engineer</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="ux-des" name="jobs" value="UX Designer">
+                            <label for="ux-des">UX Designer</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="an-spec" name="jobs" value="Analytics Specialist">
+                            <label for="an-spec">Analytics Specialist</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="proj-man" name="jobs" value="Project Manager">
+                            <label for="proj-man">Project Manager</label>
+                        </div>
+                    </div>
+                </label>
+            </section>
+
+            <section>
+                <label id="lang">
+                    <header class="input-title">Which programming languages do you know?</header>
+
+                    <div class="element-flex media">
+                        <div>
+                            <input type="checkbox" id="java" name="lang" value="Java">
+                            <label for="java">Java</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="js" name="lang" value="JavaScript">
+                            <label for="js">JavaScript</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="cs" name="lang" value="C#">
+                            <label for="cs">C#</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="kotlin" name="lang" value="Kotlin">
+                            <label for="kotlin">Kotlin</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="python" name="lang" value="Python">
+                            <label for="python">Python</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="scala" name="lang" value="Scala">
+                            <label for="scala">Scala</label>
+                        </div>
+                    </div>
+                </label>
+            </section>
+
+            <section>
+                <label>
+                    <header class="input-title">Message</header>
+                    <textarea id="message" rows="6" placeholder="Type your message" required></textarea>
+                </label>
+
+            </section>
+
+            <section class="element-flex buttons">
+                <button type="reset" class="reset-button button">Reset</button>
+                <button type="submit" class="submit-button button">Submit</button>
+            </section>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

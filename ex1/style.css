@@ -82,7 +82,7 @@
     height: 40px;
     background-color: #800080;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     margin: 0 auto;
 }

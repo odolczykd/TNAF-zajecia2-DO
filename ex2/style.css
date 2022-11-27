@@ -1,0 +1,143 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.main-flex-container{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.element-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+section{
+    margin-top: 15px;
+}
+
+.title{
+    color: #ff5a00;
+}
+
+.input-title{
+    color: #ff5a00;
+    margin-bottom: 5px;
+}
+
+#firstname, #lastname{
+    flex: 50%;
+}
+
+#firstname input, #lastname input{
+    width: 100%;
+}
+
+#email, #phone, #birth{
+    flex: 33%;
+}
+
+#email input, #phone input, #birth input{
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+#gender-select{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 5px 10px;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+#gender-select:focus,
+#message:focus {
+    border: 2px solid #ff5a00;
+}
+
+#message{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 5px 10px;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+}
+
+#gender{
+    width: 100%;
+}
+
+#gender-select{
+    width: 100%;
+}
+
+#jobs, #lang{
+    width: 100%;
+}
+
+.button{
+    height: 35px;
+    background-color: #ff5a00;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: #ee4900;
+    cursor: pointer;
+}
+
+.reset-button{
+    width: 30%;
+}
+
+.submit-button{
+    width: 70%;
+}
+
+@media (max-width: 600px){
+    .main-flex-container{
+        width: 100%;
+        display: flex;
+    }
+
+    .element-flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .media{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
